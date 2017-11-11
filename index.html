@@ -26,8 +26,10 @@
       color: #fff;
   }
   .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
+      padding-top: 0;
+      padding-bottom: 0;
+	  padding-left:0;
+	  padding-right:0;
   }
   .navbar {
       padding-top: 15px;
@@ -57,27 +59,27 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Experience</a></li>
+<li><a href="#AboutModal" data-toggle="modal" data-target="#AboutModal">About</a></li> 
         <li><a href="#">Projects</a></li>
         <li><a href="#">Skills</a></li>
         <li><a href="#">Education</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#" data-toggle="modal" data-target="#basicModal">Resume</li>
+      <li><a href="#myModal" data-toggle="modal" data-target="#myModal">Resume</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="container-fluid bg-1 text-center col-sm-4">
+<div class="container-fluid bg-1 text-center">
   <h3></h3>
-  <img src="headshot.jpg" class=".img-fluid" style="width:100%" alt="Image">
+  <img src="banner.jpg" class="img-responsive" alt="Image">
   <h3>I'm an adventurer</h3>
 </div>
-
 <div class="container-fluid bg-2 text-center">
   <h3>About Me</h3>
-  <p> </p>
+  <blockquote class="blockquote">
+   <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+ </blockquote>
 </div>
 
 <div class="container-fluid bg-3 text-center">    
@@ -98,29 +100,52 @@
   </div>
 </div>
 
-
-<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Danielle Hoopes</h4>
-            </div>
-            <div class="modal-body">
-			           <div style="text-align: center;">
-			     <img src="DanielleHoopesResume2017-1.jpg" class=".img-fluid" style="width:100%" alt="Image">
-			   </div>
-			         </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
+<!--Resume Modal-->
+<div class="text-center">
+    <h1></h1>
+    <p class="lead"></p>
 </div>
 
-<footer class="container-fluid bg-4 text-center">
-  <p> <a href=""></a></p> 
-</footer>
+<div class="modal fade" id="myModal">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Resume</h4>
+        </div>
+        <div class="modal-body">
+  <img class="img-responsive"src="DanielleHoopesResume2017-1.jpg" alt="image" />
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Close</a>
+        </div>
+      </div>
+    </div>
+</div>
+<!--Resume Modal-->
+<div class="text-center">
+    <h1></h1>
+    <p class="lead"></p>
+</div>
 
+<div class="modal fade" id="AboutModal">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Who?</h4>
+        </div>
+        <div class="modal-body">
+  <img class="img-responsive"src="headshot.jpg" style="height:50%"alt="image"/>
+   <blockquote class="blockquote">
+    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  </blockquote>
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Close</a>
+        </div>
+      </div>
+    </div>
+</div>
 </body>
 </html>
