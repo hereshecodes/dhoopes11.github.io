@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Danielle Hoopes Software Development</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script> src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .bg-1 { 
+      background-color: #ffffff;
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #e5e3e5;
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff;
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f;
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 0;
+      padding-bottom: 0;
+	  padding-left:0;
+	  padding-right:0;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+<li><a href="#AboutModal" data-toggle="modal" data-target="#AboutModal">About</a></li> 
+       <li><a href="#myModal" data-toggle="modal" data-target="#myModal">Resume</a></li>
+	    <li><a href="#">Projects</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid bg-1 text-center">
+  <h3></h3>
+  <img src="banner.jpg" class="img-responsive" alt="Image">
+  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+</div>
+<div class="container-fluid bg-2 text-center">
+  <h3>Lorem </h3>
+  <blockquote class="blockquote">
+   <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ </blockquote>
+</div>
+
+<div class="container-fluid bg-3 text-center">    
+  <h3>Projects</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+	 <div class="card" style="width:400px">
+	   <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+	   <div class="card-body">
+	     <h4 class="card-title">John Doe</h4>
+	     <p class="card-text">Some example text.</p>
+	     <a href="#" class="btn btn-primary">See Profile</a>
+	   </div>
+	 </div>
+    </div>
+    <div class="col-sm-4"> 
+	 <div class="card" style="width:400px">
+	   <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+	   <div class="card-body">
+	     <h4 class="card-title">John Doe</h4>
+	     <p class="card-text">Some example text.</p>
+	     <a href="#" class="btn btn-primary">See Profile</a>
+	   </div>
+	 </div>
+    </div>
+    <div class="col-sm-4"> 
+	 <div class="card" style="width:400px">
+	   <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+	   <div class="card-body">
+	     <h4 class="card-title">John Doe</h4>
+	     <p class="card-text">Some example text.</p>
+	     <a href="#" class="btn btn-primary">See Profile</a>
+	   </div>
+	 </div>
+    </div>
+  </div>
+</div>
+
+<!--Login Modal-->
+<div class="text-center">
+    <h1></h1>
+    <p class="lead"></p>
+</div>
+
+<div class="modal fade" id="myModal">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+  <img class="img-responsive"src="" alt="image" />
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Close</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+</body>
+</html>
