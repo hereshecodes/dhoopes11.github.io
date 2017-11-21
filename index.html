@@ -11,22 +11,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-  .bg-1 { 
-      background-color: #ffffff;
-      color: #ffffff;
-  }
-  .bg-2 { 
-      background-color: #e5e3e5;
-      color: #ffffff;
-  }
-  .bg-3 { 
-      background-color: #ffffff;
-      color: #555555;
-  }
-  .bg-4 { 
-      background-color: #2f2f2f;
-      color: #fff;
-  }
+
+
+	  h1, h2, h3 
+	  {
+	    font-family: 'Lato', sans-serif;
+	    font-weight: 300;
+	  }
+	  h4, h5, h6
+	  {
+		  font-family: 'Lato', sans-serif;
+		  font-weight: 100;
+	  }
+  
   .container-fluid {
       padding-top: 0;
       padding-bottom: 0;
@@ -64,7 +61,7 @@
 <li><a href="#AboutModal" data-toggle="modal" data-target="#AboutModal">Me Looking Presentable</a></li> 
        <li><a href="#myModal" data-toggle="modal" data-target="#myModal">Resume</a></li>
 	    <li><a href="#">Projects</a></li>
-        <li><a href="#EdModal" data-toggle="modal" data-target="#EdModal">Skills</a></li>
+        <li><a href="#SkillsModal" data-toggle="modal" data-target="#SkillsModal">Skills</a></li>
         <li><a href="#EdModal" data-toggle="modal" data-target="#EdModal">Education</a></li>
        <li><a class="link" href="mailto:daniellehoopes1@gmail.com">Email Me</a></li>
       </ul>
@@ -108,17 +105,27 @@
 
 
 <!-- Modal -->
-<div id="AboutModal" class="modal fade" role="dialog">
+<div id="SkillsModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Skills</h4>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+
+				<h3>Web</h3>
+				
+					<h5>HTML</h5>
+					<h5>CSS</h5>
+					<h5>Javascript</h5>
+					<h5>Angular.js</h5>
+					<h5>Photoshop</h6>
+					<h5>Git</h5>
+			
+      
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -143,6 +150,34 @@
         <div class="modal-body">
   <img class="img-responsive"src="DanielleHoopesResume2017-1.jpg"  alt="image"/>
   <p>words</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Close</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!--Education Modal-->
+
+<div class="modal fade" id="EdModal">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Education</h4>
+        </div>
+        <div class="modal-body">
+ <h3>B.S. Computer Science</h3>
+ <h4>Southern New Hampshire</h4>
+ <h5>President's List 2016 & 2017</h5>
+ <h6>3.9 GPA</h6>
+ <br>
+ <h3>A.S. General Studies</h3>
+ <h4>University Of Arkansas</h4>
+ <h5>Computer Club</h5>
+
         </div>
         <div class="modal-footer">
           <a href="#" data-dismiss="modal" class="btn">Close</a>
