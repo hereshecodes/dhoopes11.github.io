@@ -91,19 +91,19 @@
     <h2> Bootstrap Ticket System</h2>
       <p>Bootstrap, JavaScript, JQuery, CSS</p>
 	  <h5>Built with Visual Studio</h5>
-      <img src="quickticket.JPG" class="img-responsive" style="width:100%" alt="Image">
+      <img src="quickticket.JPG" class="img-rounded" style="width:100%" alt="Image">
     </div>
   <div class="col-sm-4"> 
 	  <h2>Travel SNHU</h2>
       <p>Bootstrap, JavaScript, JQuery, PHP, MySQL</p>
-      <img src="birds2.jpg" class="img-responsive" style="width:100%" alt="Image">
+	  <h5>Built with TextMate, MySQL Workbench</h5>
+      <a href="#TravelModal" role="button" data-toggle="modal"><img src="quickticket.JPG" class="img-rounded" style="width:100%" alt="Image"></a>
     </div>
     <div class="col-sm-4"> 
-	<video controls>
-	  <source src="CodeReview.mov" type="video/mp4">
-
-	  Your browser does not support HTML5 video.
-	</video>
+		<h2>Code Review CS-499</h2>
+        <p>Bootstrap, JavaScript, JQuery, CSS</p>
+  	  <h5>Built with Visual Studio</h5>
+	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LsHULTjcKN0" frameborder="0" allowfullscreen width="100%"></iframe>
     </div>
   </div>
   
@@ -111,11 +111,11 @@
 
 
 
-<!-- Modal -->
+<!-- Skills Modal -->
 <div id="SkillsModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
-    <!-- Modal content-->
+    <!-- Skills Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -169,7 +169,7 @@
           <h4 class="modal-title"></h4>
         </div>
         <div class="modal-body">
-  <img class="img-responsive"src="DanielleHoopesResume2017-1.jpg"  alt="image"/>
+  <img class="img-responsive" style="width:100%" src="DanielleHoopesResume2017-1.jpg"  alt="image"/>
   <p>words</p>
         </div>
         <div class="modal-footer">
@@ -226,7 +226,27 @@
       </div>
     </div>
 </div>
+<!---->
 
+<!--Portfolio Extension Modal-->
+<div class="modal fade" id="TravelModal">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Travel SNHU</h4>
+        </div>
+        <div class="modal-body">
+ 
+ </div>
+
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Close</a>
+        </div>
+      </div>
+    </div>
+</div>
 
 </body>
 </html>
