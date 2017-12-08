@@ -60,7 +60,9 @@
       letter-spacing: 2px;
 	  
   }
-
+  .modal-fade{
+	  text-align:"center";
+  }
 
   </style>
 </head>
@@ -130,7 +132,7 @@
 
 
 <!-- Skills Modal -->
-<div id="SkillsModal" class="modal fade" role="dialog">
+<div id="SkillsModal" class="modal fade">
   <div class="modal-dialog">
 
     <!-- Skills Modal content-->
@@ -139,6 +141,7 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Skills</h4>
       </div>
+	  
       <div class="modal-body">
 
 				<h3>Languages</h3>
@@ -174,13 +177,13 @@
 </div>
 
 <div id="footer">
-    <div class="container-fluid bg-1">
+    <div class="container-fluid">
         <div class="row">
             <h3 class="footertext"></h3>
             <br>
               <div class="col-md-4">
                 <center>
-                  <img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle" alt="the-brains">
+                 <img src="data:image/png;base64,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">
                   <br>
                   <h4 class="footertext">Programmer</h4>
                   <p class="footertext"><br>
@@ -188,7 +191,7 @@
               </div>
               <div class="col-md-4">
                 <center>
-                  <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
+                  <img src="data:image/png;base64,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">
                   <br>
                   <h4 class="footertext">Engineer</h4>
                   <p class="footertext"><br>
@@ -196,7 +199,7 @@
               </div>
               <div class="col-md-4">
                 <center>
-                  <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS7SURBVGhD7ZlpUxpZFIb9gzM1v2Eq80n9onEmiSbOZjIxxAUBFQyCNMqqiKiggqDgAo7GBeOuQdQ4pamKpSbEkTP3NNDQLAotIJPiVj0F76WX8xS3b9+uLim2Yiu2Yvs2G6+s84fXZVIBob2AEfBKZd+HS07eXpd1/kSA/wu8UumDcOmJjRg7hI9U4F4+hvm104IF68M6eaWd9nDpiY0MsaWO50ZmJ8fkDkxM7TLZ7tiGyam9G/IWOGfeR7Mds4/J4+Ob4JqNybYNVrbZ1mHKs89kq3WDncfWYXrOT3/HOrHecOmJLV5G/FsvSP8aYHI7yZ0vTUxurdGCvGE4mqs1IG+MZlFcFpKsaLQwueXnblAKRpnMr+qGbsEYKyuFViY3P1RCtyiUM5Zpq9XTO6XKAvJXy3lDnHNzJQUUPyqTSc5YxqjygEk/z+R+lRsGDW+ZbOiehSHDIisPG6O5j5oBy8Ayk3sV02A2RbO+ywUjg95olpM8FJM7nTBiXmWyNiZnLFPIpCWD41TRZLlXelpt4CEz1t/vTkAttkd/ax6hJ5G0ZRrKZdBcQV3nnErqmv+QCrL6SCZ9OHEEl3Y+fV07ugy0PdMHmysV9HZNFcpro3HlfPP0KiCtNwVvlRG/HASX/2tO8RxdwebHIMwcRPtWT69h/wwS8J5cM9ssHP8LvnA/TiT3LpMNEeTeZbIlgnCWsbgPQVSrA2GNhjtPtdD6TEs+o32tpK+d9MWD/ZFt2n7Vw4L3H5bInWR6jSv0wk5ZJwF1ff7A8+F57SPvsi9zOMuHwHZj3sDz5UxG80oM/fz8gefLuox52g8tj3qAT+4BmdBSlZhTkWo70WMVLCx9yJ5MpngOszdrpSIvMvkQQXIuky8R5I7XjIp+OEoFn9BSxe7rkThYBWg7JsgDF0V+o6ApDH7HvlQIs33NjC2fglw0DjKBNSldQhtZ6Y6DPKZPSVa+1mEvqwBhtRrqq2Tw5ysqLerqFClnM1kuhlkmQ0vwRA3PXyigwt2XFr9YdElldj8FQULq5PbPLJ6AtGkUOnhmFm8IFHnGGPUc0dvpehdB1mAGNflXNg8uWQXgNcInQ+auMigye3AFWCcnmdDaTA+CGi1DaK2lA9FTHZgcuyGZrmloI31v6gywtnfGEsHf7yoTEcFjcZaJh+us1XKHYRYrgnCWsa+fgUo1Bz2UGzRKN/Sr50BFPjEjfWoPDGrnEhh37jHHwOkXJwAuMtaRVZYIwllmkAwjfJzGA2eCpH6I3j9yH+EqYxjwJtTEWQaZ2bsE78EXcG6fg2MrxKL/M2wfBxJ4u/+Z/t3lC7BuiFxlcKEbXw9nmVnfF5h07YHJugXGsRC2iR1Y2fh44zUSf2dHmRe1XVCt1aRFrUyVXRm82B3OHWboxCL5oy9tEUT8e2/S49yGwbzOqgnJWIaZtfYD9JJmyPkeJj1+mJs/oFn3nactgmzsXzD7psI97weLy0efC8Hz4nCNHDtCRjL5XDRGiJ9+byJtmUIXQdKS6SAbFboIcqsMvjkTPdGAa/eC2akQRSZ2LkDwWH3Lm7NS6YNks0mhwiuX/hguPXnDt7j4Njf8VrdQETSUS78Ll1xsxVZsxfZNtZKS/wC/qeLR/sZpkwAAAABJRU5ErkJggg==">
                   <br>
                   <h4 class="footertext">Designer</h4>
                   <p class="footertext"><br>
