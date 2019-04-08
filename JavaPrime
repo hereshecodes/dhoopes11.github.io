@@ -1,0 +1,62 @@
+import javax.swing.JOptionPane;
+/**
+    Fall 15  Lab 9 problem Ch5 prog chall 13   
+    Solution: This program requests the input of an
+    integer and determines whether or not it is a 
+    prime number. (a prime number is evenly divisible
+    by only itself and 1 )
+    .
+*/
+public class IsPrimeMethod
+{
+   public static void main(String[] args)
+   {
+      String input;        // To hold keyboard input
+      String message;      // Message to display
+      int number;          // Number to check for prime
+ 
+      input = JOptionPane.showInputDialog("Enter a number."); // get a number 
+      number = Integer.parseInt(input);
+
+      if (isPrime(number))					  //call method to check for prime
+         message = "That is a prime number."; //set msg based on true or not
+      else
+         message = "That is not a prime number.";
+
+      JOptionPane.showMessageDialog(null, message);  //display results message
+                      
+      System.exit(0);
+   }
+   
+   //--------------------------------------------------------------------------
+   // The isPrime method determines whether a number is prime.
+   // @param num The number to check.
+   // @return true if the number is prime, false otherwise.
+   //--------------------------------------------------------------------------
+   public static boolean isPrime(int num)
+   {
+      boolean divisorFound = false;
+      int div = 2;
+     											  //loop from 2 to the number & 
+      while(div < num && (divisorFound == false)) //repeat loop if no even divisor found yet
+      {
+         if ((num % div) == 0)     //if 0 remainder, it is evenly divisible by div
+            divisorFound = true;   //record that we found an even divsor
+         div++;                    //In all cases, increment the divisor for next loop
+      }       
+          
+      return !divisorFound;       //flip the sign since if anything was evenly
+                                 // divisible, then the number is not prime
+      
+      
+      /*  ALTERNATIVE LOGIC      //Or could use a separate variable.
+      	 boolean isAPrime = false;
+      	
+         if (divsorFound)
+            isAPrime = false;
+         else
+             isAPrime = true;
+   	     return isAPrime;
+   	     */
+   }
+}
