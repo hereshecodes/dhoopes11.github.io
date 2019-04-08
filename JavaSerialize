@@ -1,0 +1,34 @@
+import java.io.*;
+
+
+//Serialize the testScores.java
+
+public class ReadTestScores
+{
+	public static void main(String [] args)throws IOException
+	{
+	try
+		{
+		FileOutputStream out = new FileOutputStream("Objects.dat");
+		ObjectOutputStream out2 = new ObjectOutputStream(out);
+		
+		testScores[]scores = new testScores[10];//10 test scores
+		
+		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("Objects.dat"));
+		for(int i = 0; i<scores.length; i++)
+		{
+			scores[i]=(testScores)ois.readObject();
+		}
+		
+		//Display
+		for(int i = 0; i<scores.length;i++)
+		{
+			System.out.print("Scores " + (i+1) + scores[i]);
+		}
+	}
+	catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}
