@@ -179,6 +179,15 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
+header.masthead-2 {
+  text-align: center;
+  color: white;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
 
 header.masthead .intro-text {
   padding-top: 150px;
