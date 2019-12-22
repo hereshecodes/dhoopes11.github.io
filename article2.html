@@ -22,26 +22,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
-  <link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'/> 
-  <link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/> 
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'></script> 
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCpp.js' type='text/javascript'></script> 
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js' type='text/javascript'></script> 
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js' type='text/javascript'></script> 
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js' type='text/javascript'></script> 
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js' type='text/javascript'></script> 
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPhp.js' type='text/javascript'></script> 
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js' type='text/javascript'></script> 
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushRuby.js' type='text/javascript'></script> 
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js' type='text/javascript'></script> 
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushVb.js' type='text/javascript'></script> 
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'></script> 
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPerl.js' type='text/javascript'></script> 
-  <script language='javascript'> 
-  SyntaxHighlighter.config.bloggerMode = true;
-  SyntaxHighlighter.config.clipboardSwf = 'http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf';
-  SyntaxHighlighter.all();
-  </script>
+
 </head>
 
 <body id="page-top">
@@ -120,20 +101,43 @@
 <div class= "container text-center">
 		<div class="col-lg-12 text-center">
 			<article class="article-post">
-				<h2>Securing Your Code in the .NET Framework</h2>
+				<h2>Create and Enable a Google Chrome Extension</h2>
 				<p>
-					.NET has implemented security features within the System.Security namespace classes. In addition however, as programmers we should always be familiar with ways to secure our code from attackers. These secure coding principles are just basic ways that we can protect our code. 
+                    Chrome extensions help the user to augment and ultimately approve their browsing experience in Chrome.
 				</p>
-				<h3>1. Use Parameters to Pass Data</h3>
+                <h3>1. Open your editor</h3>
+                  <h5> I use Visual Studio Code and TextMate, and create a file called manifest.json</h5>
+                <p><script src="https://gist.github.com/dhoopes11/09850759a4e6fb030d71d106953258eb.js"></script></p>
 			<p>
-				 Using parameters to pass data to your SQL statements in your DataAccess Layer is a way to guard against SQL injection and use checks and validation. It also speeds up the query execution by matching the data passed directly instead of rolling through every possible value.</b> Tip: When validating parameters, never use a input field that accepts For Example: " SELECT * FROM useraccouts WHERE user='user' "
-I forbid all uses of the apostrophe. This protects from sequel injection. I would instead use: "WHERE user=@user"
-			</p>
-			<h3>2. Protect your Libraries</h3>
-			<p>
-				SQL should never be available direct from a browser. A library is a direct route into your resources and is therefore, at risk to expose all of your information. Libraries should be accessed through your API with demand for permissions.
-			</p>
-		
+				 manifest.json holds info like the extension's version, and your chosen name for the extension.
+                 manifest.json also dictates what the browser will do when actions occur. 
+                 Actions can be such that, when a new browser tab is opened, a message appears, or a popup occurs.
+                </p>
+              </br>
+            </br>
+         
+      <h3>2. Create an action file and name it newtab.html</h3>
+      <p>Copy and paste the following code:</p>
+			<p><script src="https://gist.github.com/dhoopes11/da4c3bbacde3115817a931709982023d.js"></script>
+      </p>
+    </br>
+  </br>
+      <h3>3. Open up chrome://extensions</h3>
+      <img src="img/ce.png"></img>
+</br>
+</br>
+      <p>Enable Developer Mode, select Load Unpacked, and point to the location of your files</p>
+      
+    </br>
+  </br>
+      <h3>4. Enable your extension and open a new tab in your browser.</h3>
+     <img src= "img/hsc.png"></img>
+</br>
+</br>
+     <p>Once your extension is enabled, this displays our message each time a new tab is opened with a title and message.</p>
+</br>
+
+      <img src="img/helloworld.png"></img>
 			</article>
         </div>
             </div>
