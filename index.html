@@ -90,11 +90,56 @@
       </div>
     </div>
   </nav>
+<style>
+  .title-word {
+  animation: color-animation 4s linear infinite;
+}
 
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+</style>
   <!-- Header -->
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
+          <h2 class="title">
+            <span class="title-word title-word-1">This</span>
+            <span class="title-word title-word-2">is</span>
+            <span class="title-word title-word-3">my</span>
+            <span class="title-word title-word-4">text</span>
+          </h2>
         <div class="intro-heading text-uppercase"></div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">My Work</a>
       </div>
