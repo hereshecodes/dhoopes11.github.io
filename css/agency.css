@@ -18,15 +18,15 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #0e0b00;
 }
 
 a:hover {
-  color: #fec503;
+  color: #0a0800;
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #17494D !important;
 }
 
 h1,
@@ -129,7 +129,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #173511;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -237,6 +237,7 @@ header.masthead .intro-text .intro-heading {
   margin: 15px 0;
   text-transform: none;
   color: black !important;
+  
 }
 
 #portfolio .portfolio-item {
