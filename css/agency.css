@@ -236,6 +236,7 @@ header.masthead .intro-text .intro-heading {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+  color: black !important;
 }
 
 #portfolio .portfolio-item {
