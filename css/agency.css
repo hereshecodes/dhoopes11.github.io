@@ -7,7 +7,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
  html {
-  cursor: url('../img/cursor.png'), pointer;
+  cursor: url('../img/logos/cursor.png');
 }
 body {
   overflow-x: hidden;
@@ -252,7 +252,7 @@ header.masthead .intro-text .intro-heading {
   display: block;
   max-width: 400px;
   margin: 0 auto;
-  cursor: url('../img/cursor.png'), pointer;
+  cursor: url('../img/logos/cursor.png'), pointer;
 
 }
 
@@ -355,7 +355,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .modal-content button {
-  cursor: url('../img/cursor.png'), pointer;
+  cursor: url('../img/logos/cursor.png'), pointer;
 
 }
 
@@ -365,7 +365,7 @@ header.masthead .intro-text .intro-heading {
   right: 25px;
   width: 75px;
   height: 75px;
-  cursor: url('../img/cursor.png'), pointer;
+  cursor: url('../img/logos/cursor.png'), pointer;
 
   background-color: transparent;
 }
