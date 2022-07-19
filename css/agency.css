@@ -737,8 +737,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   100%  {color: var(--color-1)}
 }
 .glow-on-hover {
-  width: 220px;
-  height: 50px;
+ 
   border: none;
   outline: none;
   color: #fff;
