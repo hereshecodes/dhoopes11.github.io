@@ -53,7 +53,7 @@
 </head>
 
 <body id="page-top">
-
+  <main id="content" role="main">
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
@@ -107,6 +107,28 @@
       </div>
     </div>
   </header>
+  <div id="container">
+    <header>
+      <h1 id="title">
+      Allow Users to Change Font Size
+    </h1>
+  
+      <p></p>
+      <div class="textcontrols">
+        <button role="button" id="decreasetext" <span>smaller</span>
+        </button>
+        <button role="button" id="resettext">
+          <span>normal</span>
+        </button>
+        <button role="button" id="increasetext">
+          <span>bigger</span>
+        </button>
+      </div>
+      <!--/.textcontrols-->
+    </header>
+  
+    <!--/#content-->
+  </div>
       <div class="row">
         <!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
 
@@ -452,39 +474,7 @@
       </div>
     </div>
   </section>
-  <div id="container">
-    <header>
-      <h1 id="title">
-      Allow Users to Change Font Size
-    </h1>
   
-      <p>Click the buttons to see it in action</p>
-      <div class="textcontrols">
-        <button role="button" id="decreasetext" <span>smaller</span>
-        </button>
-        <button role="button" id="resettext">
-          <span>normal</span>
-        </button>
-        <button role="button" id="increasetext">
-          <span>bigger</span>
-        </button>
-      </div>
-      <!--/.textcontrols-->
-    </header>
-    <main id="content" role="main">
-      <div id="description">
-        <h2>Allow users to resize text on the page via button controls.</h2>
-        <p>In this instance, users can decrease text, increase text, or reset it back to normal.</p>
-        <h2>Set default text size with CSS</h2>
-        <p>The default text size must be set using an internal stylesheet in the header of your page. In this case: <code>font-size: 1.125em</code> (aka, 18px).</p>
-        <h2>Set the controls with JavaScript</h2>
-        <p>Then we set the resize controls with JavaScript. In this example, we're resizing all text within the div with an id of "content".</p>
-        <p>The controls check the current text size, and then changes it (or not) accordingly.</p>
-      </div>
-      <!--/#description-->
-    </main>
-    <!--/#content-->
-  </div>
   <!--/#container-->
   <!-- Contact 
   <section class="page-section" id="contact">
@@ -798,6 +788,7 @@
  
    <!-- Custom scripts for this template -->
    <script src="js/agency.min.js"></script>
+   </main>
 </body>
 
 </html>
