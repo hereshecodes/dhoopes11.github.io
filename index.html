@@ -64,6 +64,10 @@
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
+        Fontsize: 
+<div class="fa fa-search-plus" id="sizeUp"></div>
+<div class="fa fa-search" id="normal"></div>
+<div class="fa fa-search-minus" id="sizeDown"></div>
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -765,6 +769,25 @@
  
    <!-- Custom scripts for this template -->
    <script src="js/agency.min.js"></script>
+
+   <script async type="text/javascript">
+    $(document).ready(function() {
+        $("#sizeUp").click(function(){
+          var curFontSize = $('.ccm-page').css('font-size');
+           $(".ccm-page").css("font-size",parseInt(curFontSize)+1);
+         });
+
+        $("#normal").click(function() {
+            $(".ccm-page").css("font-size","15px");
+
+        })
+
+        $("#sizeDown").click(function() {
+            var curFontSize = $('.ccm-page').css('font-size');
+            $(".ccm-page").css("font-size",parseInt(curFontSize)-1);
+        })
+    });
+  </script>
 </body>
 
 </html>
