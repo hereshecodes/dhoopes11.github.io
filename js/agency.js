@@ -43,7 +43,7 @@
 	// Increase/descrease font size
 	$('#increasetext').click(function() {
 		curSize = parseInt($('#content').css('font-size')) + 2;
-		if (curSize <= 32)
+		if (curSize <= 100)
 			$('#content').css('font-size', curSize);
 	});
 
